@@ -4,18 +4,17 @@ public class Main {
 public static int year3 = 0; // для сравнения
 public static int attempt = 0; // для счетчика
 
-    public static int calculation(int year) {
+    public static void calculation(int year) {
         if (year % 400 == 0) {
             //System.out.println("Количество дней 366");
             year3 = 366;
-        } else if (year % 4 == 0) {
+        } else if (year % 4 == 0 && year % 100 != 0) {
             //System.out.println("Количество дней 366");
             year3 = 366;
         } else  {
             //System.out.println("Количество дней 365");
             year3 = 365;
         }
-    return year3;
     }
 
 
